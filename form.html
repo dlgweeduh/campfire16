@@ -1,0 +1,48 @@
+<section id="contact" class="white">
+  <div class="container">
+    <div class="row">
+      <!-- end span12 -->
+      <div class="span6 offset3 hero-unit text-center white">
+        <h2>let's chat</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus iaculis porta. Vivamus mattis tempus aliquet.</p>
+      </div>
+      <!-- end hero-unit -->
+      <div class="span12" id="ErrorMsgs"></div>
+      <!-- end ErrorMsgs -->
+      <form name="contactform" id="contactform" method="post" action="contact.php">
+        <div class="control-group span2 offset3">
+          <label for="contact_name" class="control-label">name:</label>
+          <div class="controls">
+            <input type="text" name="contact_name" id="contact_name" class="validate[required] input-block-level" required="">
+          </div>
+        </div>
+        <div class="control-group span2">
+          <label for="contact_email" class="control-label">email:</label>
+          <div class="controls">
+            <input type="email" id="contact_email" name="contact_email" class="validate[required,custom[email]] input-block-level" required="">
+          </div>
+        </div>
+        <div class="control-group span2">
+          <label for="contact_subject" class="control-label">subject:</label>
+          <div class="controls">
+            <input type="text" name="contact_subject" id="contact_subject" class="validate[required] input-block-level">
+          </div>
+        </div>
+        <div class="control-group span6 offset3">
+          <label for="contact_message" class="control-label">message:</label>
+          <div class="controls">
+            <textarea name="contact_message" id="contact_message" cols="30" rows="6" class="validate[required] input-block-level"></textarea>
+          </div>
+        </div>
+        <div class="control-group span6 offset3">
+          <div class="controls">
+            <button type="submit" id="submit" class="bttn bttn-primary pull-right" name="submit">send message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end contact -->
