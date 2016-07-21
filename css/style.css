@@ -159,8 +159,8 @@ sup {
   -moz-box-shadow: none;
   box-shadow: none; }
 
-.navbar .bttn-navbar {
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+.navbar .btn-navbar {
+  background: none repeat scroll 0 0 rgba(49, 189, 165, 0.6);
   color: #FFFFFF;
   border-color: transparent;
   box-shadow: none;
@@ -168,7 +168,7 @@ sup {
   margin: 60px 0 0 !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.55); }
 
-.navbar .bttn-navbar .icon-bar {
+.navbar .btn-navbar .icon-bar {
   background-color: #FFFFFF;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
@@ -177,7 +177,7 @@ sup {
   border-radius: 1px;
   box-shadow: 0 0 0; }
 
-.navbar .bttn-navbar:hover, .navbar .bttn-navbar:focus, .navbar .bttn-navbar:active, .navbar .bttn-navbar.active, .navbar .bttn-navbar.disabled, .navbar .bttn-navbar[disabled] {
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
   background-color: #31bda5;
   color: #FFFFFF; }
 
@@ -325,7 +325,7 @@ input[type="submit"], #submit {
   .top-bar.alt .logo span:hover {
     color: #df4e5e; }
 
-.top-bar.alt .navbar .bttn-navbar {
+.top-bar.alt .navbar .btn-navbar {
   margin: 20px 0 0 !important; }
 
 nav select {
@@ -361,11 +361,8 @@ nav select {
   margin: 0 auto;
   padding: 0; }
 
-#about, #speakers, #schedule, #workshops, #venue, #news, #twitter-feed, #contact, #newsletter {
-  padding: 100px 0 150px;
-  -webkit-box-shadow: 0 5px 0 rgba(30, 38, 44, 0.2) inset;
-  -moz-box-shadow: 0 5px 0 rgba(30, 38, 44, 0.2) inset;
-  box-shadow: 0 5px 0 rgba(30, 38, 44, 0.2) inset; }
+#wyg, #about, #speakers, #schedule, #workshops, #venue, #news, #twitter-feed, #contact, #newsletter {
+  padding: 100px 0 100px; }
 
 #sponsors {
   padding: 100px 0 100px;
@@ -385,7 +382,7 @@ nav select {
   padding: 70px 0; }
 
 #speakers {
-  background: #31bda5; }
+  background: #f9bb3c; }
 
 #schedule {
   background: #E7EBED; }
@@ -844,10 +841,9 @@ a.instagram:hover {
   padding-top: 20%;
   height: 400px; }
 
-.jumbotron > div {
+.jumbotron div {
   display: inline-block;
   width: 100%;
-  position: relative;
   z-index: 100; }
 
 .jumbotron h1 {
@@ -862,14 +858,13 @@ a.instagram:hover {
     line-height: 25px; }
 
 .bg_text {
-  background-color: #df4e5e;
+  position: relative;
   padding: 25px;
   width: 60%;
   display: inline-block;
   margin: 0 auto;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0.2s;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  z-index: 1000;
+  transition-delay: 0.2s; }
 
 .jumbotron h2 {
   font-size: 60px;
@@ -885,8 +880,7 @@ a.instagram:hover {
 .jumbotron h4 {
   font-size: 26px;
   font-weight: 400;
-  line-height: 1.1;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
+  line-height: 1.1; }
   .jumbotron h4 span {
     color: #f9bb3c; }
 
@@ -908,6 +902,17 @@ h1, h2 {
   font-weight: 700;
   letter-spacing: 4px; }
 
+.time {
+  background: #31bda5;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 20px; }
+  .time a {
+    color: #df4e5e; }
+
 .jumbotron .days, .jumbotron .month, .jumbotron .year, .jumbotron .location {
   display: inline-block;
   padding: 0 5px; }
@@ -928,6 +933,48 @@ h1, h2 {
     background-color: #f9bb3c; }
     .jumbotron a.bttn.bttn-c2:hover {
       background-color: #f98531; }
+
+#wyg {
+  background-color: #282249;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  margin-top: -10px; }
+
+#wyg p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px; }
+
+#wyg h1 {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px; }
+
+#wyg-title {
+  width: 100%;
+  border: none;
+  margin-bottom: 120px; }
+
+#item1 {
+  border-bottom: dashed 1px grey;
+  border-right: dashed 1px grey;
+  height: 250px; }
+
+#item2 {
+  text-align: right;
+  border-bottom: dashed 1px grey;
+  border-left: dashed 1px grey;
+  height: 250px; }
+
+#item3 {
+  border-top: dashed 1px grey;
+  border-right: dashed 1px grey;
+  height: 250px; }
+
+#item4 {
+  text-align: right;
+  border-top: dashed 1px grey;
+  border-left: dashed 1px grey;
+  height: 250px; }
 
 /* Modal */
 .price-table {
@@ -1757,11 +1804,8 @@ h1, h2 {
   .top-bar.alt .navbar .nav > li:last-child > a {
     margin: 2px 4px 4px; }
 
-  .navbar .bttn-navbar {
+  .navbar .btn-navbar {
     margin: 18px 0 0 !important; }
-
-  .top-bar.alt .navbar .bttn-navbar {
-    margin: -25px 0 0 !important; }
 
   .jumbotron h1 {
     font-size: 60px;
@@ -2076,10 +2120,10 @@ h1, h2 {
   .jumbotron a.bttn {
     margin: 50px auto 0; }
 
-  .navbar .bttn-navbar {
+  .navbar .btn-navbar {
     margin: 18px 0 0 !important; }
 
-  .top-bar.alt .navbar .bttn-navbar {
+  .top-bar.alt .navbar .btn-navbar {
     margin: -25px 0 0 !important; }
 
   .jumbotron {
